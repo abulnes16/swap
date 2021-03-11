@@ -43,7 +43,7 @@ const ExchangeForm = ({ currencyList, convert }) => {
       currencySymbol:
         currencyTo.symbol !== "" ? currencyTo.currencySymbol : currencyTo.id,
     };
-    console.log(convertData);
+
     convert(convertData);
   };
 
