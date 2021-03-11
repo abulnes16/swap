@@ -14,6 +14,13 @@ export default StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 60,
     elevation: 2,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 1.41,
   },
   btn: {
     width: "100%",
