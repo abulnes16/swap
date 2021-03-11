@@ -7,11 +7,11 @@ import { View, Text, StyleSheet } from "react-native";
 import globalStyles from "../styles";
 import colors from "../constants/colors";
 
-const ExchangeCurrency = () => {
+const ExchangeCurrency = ({ currencySymbol = "L", value }) => {
   return (
     <View style={styles.card}>
-      <Text style={[styles.text, styles.colorText]}>$</Text>
-      <Text style={styles.text}>150.00</Text>
+      <Text style={[styles.text, styles.colorText]}>{currencySymbol}</Text>
+      <Text style={styles.text}>{value}</Text>
     </View>
   );
 };
